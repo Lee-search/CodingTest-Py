@@ -8,6 +8,7 @@ for _ in range(N):
     
 origin = plain  # 원본 저장
 
+# 모든 카메라 정보 출력
 def find_camera() -> list:
     cam_list = []
 
@@ -17,8 +18,7 @@ def find_camera() -> list:
                 cam_list.append((plain[i][j], i, j))
     return cam_list
 
-cams = find_camera() # -> [(종류, 좌표)]
-
+# 사각지대 출력
 def getZArea():
     sum = 0
 
@@ -52,24 +52,25 @@ def cam_1(r:int, c: int, d: int):  # r, c: 카메라 좌표
 
 total = []
 
-def makeSolutions(c: int) -> list:
-    solutions = []
-    for _ in range(c):
-        temp = []
-        for i in range(4):
-                temp.append(j)
-        solutions.append(temp)
-    return solutions
+# 가능한 모든 경우의 수 출력, max = 8
+def brute(n: int) -> list:
+    # N, E, S, W
+    d = [0, 1, 2, 3]
+    sols = []
 
+    for i in range(2 ** n):
+        b = bin(i)[2:]
+        if len(b) <= n:
+            b = '0' * (n - len(b)) + b
+        sols.append(list(map(int, b)))
+    return sols
 
-for c in cams:
-    c_no, cx, cy = c[0], c[1], c[2]
+cams = find_camera() # -> [(종류, 좌표)]
 
-
-
-
-    for d in range(4):  # 북, 동, 남, 서
-        cam_1(c_x, c_y, d)
+# i: 카메라순서, sol: 회전방향
+for sol in brute(len(cams)):
+    for i in sol:
+        cam_1(, , )
         
         
 print(plain)
