@@ -1,8 +1,10 @@
 N, M = map(int, input().split())
 plain = []
+cam_list = []
 
 for i in range(N):
     line = list(map(int, input().split()))
+    cam_list.extend([(line[j], i, j) for j in range(len(line)) if line[j] in range(1, 6)])
     plain.append(line)
 
 # 북, 동, 남, 서
@@ -75,5 +77,32 @@ def cam_5(r: int, c: int):
     new_list.append(p)
     return new_list
 
-import pprint as pp
-print(pp.pprint(cam_5(2,2)))
+def select_cam(n:int, r:int, c:int):
+    if n == 1:
+        return cam_1(r, c)
+    elif n == 2:
+        return cam_2(r, c)
+    elif n == 3:
+        return cam_3(r, c)
+    elif n == 4:
+        return cam_4(r, c)
+    else:
+        return cam_5(r, c)
+
+## MAIN
+plains = []
+for (n, r, c) in cam_list:
+    new_plains = select_cam(n, r, c)
+    if plains == []:
+        plains = new_plains
+        continue
+
+    for p in plains:
+        for i in range(N):
+            for j in range(M):
+                if new_plains[i][j] == -1:
+                    p[i][j] = -1
+
+
+
+
