@@ -67,7 +67,7 @@ def brute(n: int) -> list:
 
 cams = find_camera() # -> [(종류, 좌표)]
 
-# i: 카메라순서, sol: 회전방향
+# i: 카메라순서, solved: 회전방향
 for sol in brute(len(cams)):
     for i in sol:
         cam_1()
