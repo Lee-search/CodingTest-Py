@@ -1,3 +1,5 @@
+# 타겟 넘버
+# https://school.programmers.co.kr/learn/courses/30/lessons/43165
 answer = 0  # --> 2
 def solution(numbers, target):
     # numbers = [4, 1, 2, 1]
