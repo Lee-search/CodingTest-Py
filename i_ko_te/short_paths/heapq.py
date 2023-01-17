@@ -27,13 +27,3 @@ def heapsort(iterable):
 
 result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
-
-# 다익스트라 수행
-dijkstra(start)
-
-# 각 노드의 최단거리 출력
-for i in range(1, n + 1):
-    if distance[i] == INF:
-        print("INF")
-    else:
-        print(distance[i])
