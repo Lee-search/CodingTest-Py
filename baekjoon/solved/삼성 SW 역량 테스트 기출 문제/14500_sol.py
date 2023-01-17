@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14500
+# 테트로미노: 구현, 브루트포스 알고리즘
+
 import sys
 input = sys.stdin.readline
 

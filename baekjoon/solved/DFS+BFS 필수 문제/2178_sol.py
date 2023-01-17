@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/2178
+# 미로 탐색: 그래프 이론, 너비 우선 탐색
+
 from collections import deque
 
 # 행, 열

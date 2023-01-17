@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14888
+# 브루트포스 알고리즘, 백트래킹
+
 N = int(input())
 nums = list(map(int, input().split()))
 plus, minus, mult, div = map(int, input().split())

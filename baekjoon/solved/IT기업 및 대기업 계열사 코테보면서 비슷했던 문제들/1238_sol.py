@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/1238
-# 다익스트라 알고리즘 이용한 문제
+# 파티: 다익스트라 알고리즘 이용한 문제
 
 import heapq
 

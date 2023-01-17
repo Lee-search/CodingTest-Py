@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14890
+# 경사로: 구현
+
 import sys
 
 input = sys.stdin.readline

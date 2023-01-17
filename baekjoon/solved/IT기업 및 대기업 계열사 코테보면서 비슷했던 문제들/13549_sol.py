@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/13549
-# 다익스트라 이용하여 구현
+# 숨바꼭질 3: 다익스트라 이용하여 구현
 
 import heapq
 INF = int(1e9)

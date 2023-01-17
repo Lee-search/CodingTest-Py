@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14891
+# 톱니바퀴: 구현, 시뮬레이션
+
 import sys
 input = sys.stdin.readline
 

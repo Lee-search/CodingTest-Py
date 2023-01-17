@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/1260
+# DFS와 BFS
+
 # 정점, 간선, 시작노드
 n, m, start = map(int, input().split())
 graph = []

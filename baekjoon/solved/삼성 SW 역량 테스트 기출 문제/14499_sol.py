@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14499
+# 주사위굴리기: 구현, 시뮬레이션
+
 N, M, x, y, K = list(map(int, input().split()))
 plain = [] # 지도
 command = [] # 명령
