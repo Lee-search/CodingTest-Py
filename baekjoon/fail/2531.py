@@ -1,18 +1,18 @@
 n, d, k, c = map(int, input().split())
 sushi = [ int(input()) for _ in range(n) ]
-sushi.extend(sushi)
 
 answer = 0
-
-left = 0
-right = k - 1
-
+i = 0
 while True:
-    if front == i + 1:
+    front = i
+    back = i + k
+    if back == n + 1:
         break
 
     now = set(sushi[front:back])
     answer = max(answer, len(now))
     if c not in now:
         answer += 1
+
+    i += 1
 print(answer)
